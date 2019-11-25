@@ -96,6 +96,16 @@
 	<artifactId>language-translator</artifactId>
 	<version>8.0.1</version>
 	</dependency>
+	<dependency>
+		<groupId>com.ibm.watson.developer_cloud</groupId>
+		<artifactId>visual-recognition</artifactId>
+		<version>6.11.0</version>
+	</dependency>
+	<dependency>
+		<groupId>com.ibm.watson.developer_cloud</groupId>
+		<artifactId>text-to-speech</artifactId>
+		<version>6.11.0</version>
+	</dependency>
 
 
   </dependencies>
