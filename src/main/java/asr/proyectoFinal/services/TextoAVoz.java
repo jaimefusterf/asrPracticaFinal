@@ -21,9 +21,15 @@ import com.ibm.watson.developer_cloud.text_to_speech.v1.model.SynthesizeOptions;
 import com.ibm.watson.developer_cloud.text_to_speech.v1.util.WaveUtils;
 import com.ibm.watson.developer_cloud.text_to_speech.v1.websocket.BaseSynthesizeCallback;
 
+import asr.proyectoFinal.dao.VCAPHelper;
+
 public class TextoAVoz {
 	public static void hablar(String texto,HttpServletResponse response) {
-		IamOptions options = new IamOptions.Builder().apiKey("viELcj1khvVnaWZC16efrUoMwOGF5txO50TfRmcLU_DH").build();
+		String apiKey;
+		
+		apiKey = VCAPHelper.getLocalProperties("microservicios.properties").getProperty("textoVoz_apiKey");
+		
+		IamOptions options = new IamOptions.Builder().apiKey(apiKey).build();
 
 		TextToSpeech textToSpeech = new TextToSpeech(options);
 		textToSpeech.setEndPoint("https://gateway-lon.watsonplatform.net/text-to-speech/api");

@@ -10,6 +10,8 @@ import com.ibm.watson.language_translator.v3.LanguageTranslator;
 import com.ibm.watson.language_translator.v3.model.TranslateOptions;
 import com.ibm.watson.language_translator.v3.model.TranslationResult;
 
+import asr.proyectoFinal.dao.VCAPHelper;
+
 public class Traductor
 {
 	public static String translate(String palabra, String sourceModel, String destModel, boolean conversational)
@@ -24,7 +26,11 @@ public class Traductor
 		else
 			model="en-es";
 
-		Authenticator authenticator = new IamAuthenticator("sGBqIG-kLec4RdsA3imHp_lvb7MMlZNzq-PgkmCX59P0");
+		String apiKey;
+		
+		apiKey = VCAPHelper.getLocalProperties("microservicios.properties").getProperty("traductor_apiKey");
+
+		Authenticator authenticator = new IamAuthenticator(apiKey);
 		LanguageTranslator languageTranslator = new LanguageTranslator("2018-05-01", authenticator);
 
 		languageTranslator.setServiceUrl("https://gateway-lon.watsonplatform.net/language-translator/api");

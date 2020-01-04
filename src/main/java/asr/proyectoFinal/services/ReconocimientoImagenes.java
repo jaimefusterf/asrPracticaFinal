@@ -5,14 +5,19 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import com.ibm.watson.developer_cloud.visual_recognition.v3.model.ClassifiedImages;
 import com.ibm.watson.developer_cloud.visual_recognition.v3.model.ClassifyOptions;
+
+import asr.proyectoFinal.dao.VCAPHelper;
+
 import com.ibm.watson.developer_cloud.service.security.IamOptions;
 import com.ibm.watson.developer_cloud.visual_recognition.v3.VisualRecognition;
 
 public class ReconocimientoImagenes{
 	
 	public static String reconocer(String image){
-		IamOptions options = new IamOptions.Builder().apiKey("qhTU6Ut5OkySgZd6qj9TtjxA6VbTmTO4dW_V7y6rgJQZ").build();
-	
+		String apiKey;
+		
+		apiKey = VCAPHelper.getLocalProperties("microservicios.properties").getProperty("reconocimientoImg_apiKey");
+		IamOptions options = new IamOptions.Builder().apiKey(apiKey).build();
 		VisualRecognition visualRecognition = new VisualRecognition("2019-04-11", options);
 	
 		ClassifyOptions classifyOptions = new ClassifyOptions.Builder()
