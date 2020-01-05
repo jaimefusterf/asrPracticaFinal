@@ -58,7 +58,7 @@ public class CloudantPalabraStore
 			url = cloudantCredentials.get("url").getAsString();
 		} else {
 			System.out.println("Running locally. Looking for credentials in cloudant.properties");
-			url = VCAPHelper.getLocalProperties("cloudant.properties").getProperty("cloudant_url");
+			url = VCAPHelper.getLocalProperties("cloudant2.properties").getProperty("cloudant_url");
 			if(url == null || url.length()==0){
 				System.out.println("To use a database, set the Cloudant url in src/main/resources/cloudant.properties");
 				return null;

@@ -16,7 +16,7 @@ public class ReconocimientoImagenes{
 	public static String reconocer(String image){
 		String apiKey;
 		
-		apiKey = VCAPHelper.getLocalProperties("cloudant.properties").getProperty("reconocimientoImg_apiKey");
+		apiKey = VCAPHelper.getLocalProperties("cloudant2.properties").getProperty("reconocimientoImg_apiKey");
 		IamOptions options = new IamOptions.Builder().apiKey(apiKey).build();
 		VisualRecognition visualRecognition = new VisualRecognition("2019-04-11", options);
 	
