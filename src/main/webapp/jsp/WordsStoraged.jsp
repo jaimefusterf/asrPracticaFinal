@@ -64,7 +64,7 @@
             <li class="selected first-slide">
                 <div class="cd-full-width">
                     <div class="tm-slide-content-div slide-caption">
-                        <span>Resultado</span>
+                        <span>Result</span>
                         <h2>Esto es lo que has almacenado</h2>
                         <p><b><%=request.getAttribute("almacenadas")%></b></p>                        
                     </div>                   

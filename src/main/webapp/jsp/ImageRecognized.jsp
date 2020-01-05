@@ -64,8 +64,8 @@
             <li class="selected first-slide">
                 <div class="cd-full-width">
                     <div class="tm-slide-content-div slide-caption">
-                        <span>Resultado</span>
-                        <h2>Este microservicio reconoce la imagen como:</h2>                      
+                        <span>Result</span>
+                        <h2>This microservice recognizes the image as:</h2>                      
                         <p><b><%=request.getAttribute("resultado")%></b>
                     </div>                   
                 </div> <!-- .cd-full-width -->

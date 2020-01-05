@@ -65,7 +65,7 @@
                 <div class="cd-full-width">
                     <div class="tm-slide-content-div slide-caption">
                         <span>Resultado</span>
-                        <h2>Esta es la traducción:</h2>                      
+                        <h2>Here's the translation:</h2>                      
                         <p><b><%=request.getAttribute("traduccion")%></b>
                     </div>                   
                 </div> <!-- .cd-full-width -->
