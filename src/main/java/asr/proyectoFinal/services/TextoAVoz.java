@@ -27,7 +27,7 @@ public class TextoAVoz {
 	public static void hablar(String texto,HttpServletResponse response) {
 		String apiKey;
 		
-		apiKey = VCAPHelper.getLocalProperties("microservicios.properties").getProperty("textoVoz_apiKey");
+		apiKey = VCAPHelper.getLocalProperties("cloudant.properties").getProperty("textoVoz_apiKey");
 		
 		IamOptions options = new IamOptions.Builder().apiKey(apiKey).build();
 

@@ -28,7 +28,7 @@ public class Traductor
 
 		String apiKey;
 		
-		apiKey = VCAPHelper.getLocalProperties("microservicios.properties").getProperty("traductor_apiKey");
+		apiKey = VCAPHelper.getLocalProperties("cloudant.properties").getProperty("traductor_apiKey");
 
 		Authenticator authenticator = new IamAuthenticator(apiKey);
 		LanguageTranslator languageTranslator = new LanguageTranslator("2018-05-01", authenticator);
