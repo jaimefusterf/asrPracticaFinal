@@ -1,9 +1,10 @@
-# ![](https://raw.githubusercontent.com/DavidContrerasICAI/javaCourseExamples/master/images/logo.jpg) asrTomcatEjemploCloudant
-## by David Contreras
-### Repositorio de la asignatura Arquitectura de Servicios en Red de 1º del Máster en Telecomunicación en la Escuela Técnica Superior de Ingeniería de ICAI (Universidad Pontificia Comillas)
-Ejemplo base de desarrollo de aplicaciones cloud nativas con IBM Cloud. 
+# ![](https://raw.githubusercontent.com/DavidContrerasICAI/javaCourseExamples/master/images/logo.jpg) Práctica Final de ASR
+### by Jaime Fúster de la Fuente, Esther Vázquez Rodríguez
 
-Disfruta de la asignatura!
+Este repositorio contiene el código para la práctica final de la asignatura **Arquitectura de Servicios de Red**, perteneciente al primer curso del **Máster en Ingeniería de Telecomunicación** de la _Escuela Superior de Ingeniería de ICAI_ (Universidad Pontificia de Comillas).
+
+El proyecto ha sido relaizado por Jaime Fúster y Esther Vázquez. 
+
 
 
 
